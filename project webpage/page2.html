@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="movielist.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <script>
+
+
+    function myform(){
+        
+        var x = document.getElementById("name").value
+        console.log(x)
+        var y = document.getElementById("Feedback").value
+        console.log(y)
+        var node = document.getElementById('list');
+        if(x == "" && y == "" ){
+            alert("please fill in both fields")
+        }
+        else if(x == ""){
+            alert(" please fill in a name")
+        }
+        else if(y == ""){
+            alert("please type a comment")
+        }
+
+        else{
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode(x+": "+y);
+            node.appendChild(textnode);
+            document.getElementById("mylist").appendChild(node);
+
+        }
+    }
+   
+    </script>
+</head>
+<body>
+    <form >
+        <ul>
+        <li><label for="Name">Name:</label></li>
+        <li><input type="text" id="name" name="name"><br></li>
+        <li><label for="Feedback">Comment:</label></li>
+        <li><textarea name="Feedback:" id="Feedback" cols="30" rows="10" ></textarea><br></li>
+        <li><button type="button" onclick="myform()">Submit</button></li>
+        </ul>
+    </form>
+    
+    <hr>
+
+    <h1> Comments: </h1>
+
+    <ul id="mylist">
+        
+    </ul>
+</body>
+</html>

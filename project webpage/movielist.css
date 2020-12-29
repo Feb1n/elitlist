@@ -1,0 +1,164 @@
+
+
+body {background-color: black;
+    }
+
+#image{
+  position: relative;
+  
+}
+#image2{
+  position: relative;
+}
+
+#text{
+  left: 0;
+    position:absolute;
+    text-align:center;
+    top: 30px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 144  ;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 5px;
+    animation: rise ease 1.5s forwards
+    
+
+
+}
+
+#text1
+{left: 0;
+  position:absolute;
+  text-align:center;
+  top: 300px;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 40;
+
+}
+
+#text2
+{left: 0;
+  position:absolute;
+  text-align:center;
+  top: 300px;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-size: 20;
+}
+p{
+  font-size: 12;
+  font-family:  'Source Sans Pro', sans-serif;
+  color: white;
+  padding: 10px;
+}
+
+a:link, a:visited{
+  color: white;
+  font-family:  'Source Sans Pro', sans-serif;
+  padding: 10px;
+  font-size: 12;
+  text-align: center
+  
+}
+
+
+
+footer{
+  background-color:black ;
+  border: #1d1d1f;
+  border-width: 10px;
+  width: 100%;
+  fill:#1d1d1f ;
+
+}
+button{
+  text-align: center;
+  padding: 10px;
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  background-color: black;
+  border-color: white;
+  color: white;
+  border-radius: 20px;
+}
+
+button:hover{
+  background-color: white;
+  color: black;
+  
+}
+
+
+@keyframes rise{
+  from{
+    bottom: 10%
+  }
+  to{
+    top: 10%
+  }
+}
+
+
+p{
+  text-align: center
+}
+
+/* CSS HEX */
+/*--carolina-blue: #4d9de0ff;
+--indian-red: #e15554ff;
+--charcoal: #344055ff;
+--platinum: #e6e6e9ff;
+--cultured: #f4f4f6ff;
+1d1d1f -- grey
+*/
+
+label{
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 10px
+}
+
+#box{
+  border-radius: 10px;
+  border-color: white;
+}
+
+input[type="text"]{
+  padding: 10px 20px;
+}
+
+textarea{
+  
+  padding: 10px 20px;
+  
+}
+
+input[type="submit"]{
+  padding: 10px 10px;
+  color: white;
+  background-color: black;
+  border-color: white;
+  border-radius: 10px;
+  
+}
+
+li{
+  margin: 10px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif
+
+}
+ul {
+    list-style-type: none;
+}
+
+h1{
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
